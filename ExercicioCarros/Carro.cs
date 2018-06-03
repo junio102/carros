@@ -34,7 +34,11 @@ namespace ExercicioCarros
 
         public override string ToString()
         {
-            string s = codigo + ", " + modelo + ", Ano: " + ano + ", Preço básico: " + precoBasico.ToString("F2", CultureInfo.InvariantCulture) + ", Preço total: " + precoTotal().ToString("F2", CultureInfo.InvariantCulture)
+            string s = codigo + ", " + modelo
+                + ", Ano: " + ano
+                + ", Preço básico: " + precoBasico.ToString("F2", CultureInfo.InvariantCulture)
+                + ", Preço total: " + precoTotal().ToString("F2", CultureInfo.InvariantCulture)
+                + "\nMarca: " + marca.nome
             + "\nAcessórios: ";
             
             foreach(Acessorio listaAce in acessorios)
